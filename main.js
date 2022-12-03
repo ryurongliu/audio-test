@@ -1,7 +1,7 @@
 var audio = new Howl({
   src: ["26' - 1.wav"],
   html5: true,
-  preload: auto
+  preload: "auto"
 })
 
 document.addEventListener('mousedown', test);

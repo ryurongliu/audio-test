@@ -1,12 +1,14 @@
-var audio = new Audio();
-audio.src = "26' - 1.wav";
-audio.preload = "auto"; 
+var audio = new Howl({
+  src: ["26' - 1.wav"],
+  html5: true,
+  preload: auto
+})
 
 document.addEventListener('mousedown', test);
 
 function test(){
-  audio.currentTime = 15;
-  console.log(audio.currentTime);
+  audio.seek(15);
+  console.log(audio.seek());
   audio.play();
-  console.log(audio.currentTime);
+  console.log(audio.seek());
 }
